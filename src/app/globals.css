@@ -3,13 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 html,
 body {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 button {
@@ -18,9 +21,10 @@ button {
   border: 1px solid #00B4FF !important;
 }
 
-input {
+input,
+select {
   width: 100% !important;
-  height: 40px !important;
+  height: 42px !important;
   padding: 0 10px !important;
 }
 
@@ -30,4 +34,29 @@ input {
 
 .ant-form-item {
   margin-bottom: 0 !important;
+}
+
+textarea {
+  width: 100% !important;
+  min-height: 100px !important;
+  padding: 10px !important;
+}
+
+table {
+  border: 1px solid #bebebe !important;
+  border-radius: 0 !important;
+}
+
+thead th {
+  border-bottom: 1px solid #bebebe !important;
+  font-weight: bold !important;
+}
+
+.btn-small {
+  height: 30px !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000000 !important;
 }

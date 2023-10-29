@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import ThemeProvider from '@/providers/ThemeProvider'
+import LayoutProvider from '@/providers/LayoutProvider'
+import StoreProvider from "@/providers/StoreProvider";
+import ThemeProvider from "@/providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: 'VaiVem',
@@ -10,15 +12,23 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+          rel="stylesheet"
+        ></link>
+      </head>
       <body>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        <StoreProvider>
+          <ThemeProvider>
+            <LayoutProvider>{children}</LayoutProvider>
+          </ThemeProvider>
+        </StoreProvider>
       </body>
     </html>
-  )
+  );
 }
