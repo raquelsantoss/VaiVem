@@ -65,7 +65,7 @@ function PersonalInfo() {
           <input type="password" />
         </Form.Item>
 
-        <Button type="primary" htmlType="submit" block loading={loading}>
+        <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}} type="primary" htmlType="submit" block loading={loading}>
           Salvar
         </Button>
       </Form>

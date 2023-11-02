@@ -59,7 +59,7 @@ function ProductsList() {
       dataIndex: "name",
     },
     {
-      title: "Created By",
+      title: "Criado Por:",
       dataIndex: "createdBy",
       render: (createdBy: any) => createdBy.name,
     },
@@ -84,9 +84,9 @@ function ProductsList() {
               }}
               loading={deleteLoading && selectedProduct?._id === params._id}
             >
-              Delete
+              Deletar
             </Button>
-            <Button
+            <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}}
               type="primary"
               className="btn-small"
               onClick={() => {
@@ -104,7 +104,7 @@ function ProductsList() {
   return (
     <div>
       <div className="flex justify-end">
-        <Button
+        <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}}
           type="primary"
           onClick={() => router.push("/profile/add_product")}
         >

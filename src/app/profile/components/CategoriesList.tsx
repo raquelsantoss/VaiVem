@@ -80,7 +80,7 @@ function CategoriesList() {
             >
               Deletar
             </Button>
-            <Button
+            <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}}
               type="primary"
               className="btn-small"
               onClick={() => {
@@ -99,7 +99,7 @@ function CategoriesList() {
   return (
     <div>
       <div className="flex justify-end">
-        <Button type="primary" onClick={() => setShowCategoryForm(true)}>
+        <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}} type="primary" onClick={() => setShowCategoryForm(true)}>
           Add Categoria
         </Button>
       </div>

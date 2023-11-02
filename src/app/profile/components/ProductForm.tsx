@@ -69,7 +69,7 @@ function ProductForm({
           rules={getAntdFieldRequiredRule("Categoria é obrigatória")}
         >
           <select>
-            <option value="">Select Category</option>
+            <option value="">Selecionar Categoria</option>
             {categories.map((category: any) => (
               <option key={category._id} value={category._id}>
                 {category.name}
@@ -152,8 +152,8 @@ function ProductForm({
         </div>
 
         <div className="col-span-3 justify-end flex gap-5">
-          <Button onClick={() => router.back()}>Back</Button>
-          <Button type="primary" htmlType="submit" loading={loading}>
+          <Button onClick={() => router.back()}>Voltar</Button>
+          <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}} type="primary" htmlType="submit" loading={loading}>
             Salvar
           </Button>
         </div>
