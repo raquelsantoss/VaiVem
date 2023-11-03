@@ -47,7 +47,7 @@ export async function DELETE(
     await validateJWT(request);
     await Product.findByIdAndDelete(params.productid);
     return NextResponse.json({
-      message: "Product deleted successfully",
+      message: "Produto deletado com sucesso",
     });
   } catch (error: any) {
     return NextResponse.json({ message: error.message }, { status: 500 });

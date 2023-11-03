@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json({
-      message: "Order placed successfully",
+      message: "Pedido realizado com sucesso",
     });
   } catch (error: any) {
     return NextResponse.json(

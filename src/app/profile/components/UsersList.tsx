@@ -38,12 +38,12 @@ function UsersList() {
     {
       title: "É Admin?",
       dataIndex: "isAdmin",
-      render: (isAdmin: boolean) => (isAdmin ? "Yes" : "No"),
+      render: (isAdmin: boolean) => (isAdmin ? "Sim" : "Não"),
     },
     {
       title: "Ativo?",
       dataIndex: "isActive",
-      render: (isActive: boolean) => (isActive ? "Yes" : "No"),
+      render: (isActive: boolean) => (isActive ? "Sim" : "Não"),
     },
   ];
   return (

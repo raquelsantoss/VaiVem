@@ -42,7 +42,7 @@ function CategoryForm({
       centered
       title={
         <h1 className="text-2xl font-bold text-gray-800">
-          {selectedCategory ? "Edit Category" : "Add Category"}
+          {selectedCategory ? "Editar Categoria" : "Add Categoria"}
         </h1>
       }
       closable={false}

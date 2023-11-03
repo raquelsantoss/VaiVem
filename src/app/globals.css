@@ -18,7 +18,7 @@ body {
 button {
   height: 45px !important;
   border-radius: 0 !important;
-  border: 1px solid #00B4FF !important;
+  border: 1px solid #000 !important;
 }
 
 input,
@@ -59,4 +59,20 @@ thead th {
 a {
   text-decoration: none !important;
   color: #000000 !important;
+}
+
+/* scrollbar styling */
+
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d1d1d1 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8a8a8a !important;
 }
