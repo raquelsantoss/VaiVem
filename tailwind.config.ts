@@ -17,7 +17,7 @@ const config: Config = {
       colors: {
         primary: '#000',
         principal: '#00B4FF',
-        principal_two: '#00D1ED',
+        principal_logo: '#f2f5f7',
       }
     },
   },

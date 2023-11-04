@@ -51,7 +51,7 @@ function LayoutProvider({ children }: { children: React.ReactNode }) {
     try {
       setLoading(true);
       await axios.get("/api/auth/logout");
-      message.success("Logout successfully");
+      message.success("Logout realizado com sucesso");
       dispatch(SetCurrentUser(null));
       router.push("/auth/login");
     } catch (error: any) {

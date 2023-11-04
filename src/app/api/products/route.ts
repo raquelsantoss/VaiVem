@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     await product.save();
 
     return NextResponse.json({
-      message: "Product created successfully",
+      message: "Produto criado com sucesso",
     });
   } catch (error: any) {
     return NextResponse.json(
