@@ -1,3 +1,7 @@
+![image](https://github.com/raquelsantoss/VaiVem/assets/80298086/a3d42d31-bc05-4361-8173-25777a2fbea0)
+
+
+
 ## 🚀 VaiVem
 
 A startup existe para unir as tecnologias, como a internet, aplicativos móveis, plataformas digitais e a Internet das Coisas (IoT) e o aluguel de produtos, fomentando a economia compartilhada e contribuindo para a construção de uma sociedade mais conectada e eficiente.
