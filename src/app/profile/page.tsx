@@ -47,11 +47,11 @@ function Profile() {
       )}
       {!currentUser.isAdmin && (
         <Tabs defaultActiveKey="1">
-          <Tabs.TabPane tab="Orders" key="1">
+          <Tabs.TabPane tab="Pedidos" key="1">
             <UsersOrdersList />
           </Tabs.TabPane>
 
-          <Tabs.TabPane tab="Personal Information" key="2">
+          <Tabs.TabPane tab="Informações Pessoais" key="2">
             <PersonalInfo />
           </Tabs.TabPane>
         </Tabs>

@@ -88,7 +88,7 @@ function AdminOrdersList() {
               onStatusUpdate(record._id, e.target.value);
             }}
           >
-            <option value="order placed">Data pedido</option>
+            <option value="order placed">Status do pedido</option>
             <option value="shipped">Enviado</option>
             <option value="out for delivery">Saiu para entrega</option>
             <option value="delivered">Entregue</option>
@@ -115,7 +115,7 @@ function AdminOrdersList() {
                   onRefundissue(record._id, record.transactionId);
                 }}
               >
-                Issue Refund
+                Reembolso
               </span>
             )}
           <span
@@ -124,7 +124,7 @@ function AdminOrdersList() {
               router.push(`/profile/orders/${record._id}`);
             }}
           >
-            View
+            Ver
           </span>
         </div>
       ),

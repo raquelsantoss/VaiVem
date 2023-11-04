@@ -27,22 +27,22 @@ function OderInfo({ params }: { params: any }) {
 
   const itemsColumns = [
     {
-      title: "Product",
+      title: "Produto",
       dataIndex: "name",
     },
     {
-      title: "Price",
+      title: "Preço",
       dataIndex: "price",
     },
     {
-      title: "Quantity",
+      title: "Quantidade",
       dataIndex: "quantity",
     },
     {
       title: "Total",
       dataIndex: "total",
       render: (total: number, record: any) =>
-        `$ ${record.price * record.quantity}`,
+        `R$ ${record.price * record.quantity}`,
     },
   ];
 
@@ -63,26 +63,26 @@ function OderInfo({ params }: { params: any }) {
       {order && (
         <div>
           <h1 className="text-sm xl:text-2xl font-bold text-gray-700">
-            View Order : #{order._id}
+            Ver Pedido : #{order._id}
           </h1>
           <hr className="border-gray-300 border-solid" />
 
           <div className="flex flex-col xl:grid grid-cols-3 gap-5 mt-8 w-full">
-            <h1 className="text-xl col-span-3">Basic Information</h1>
+            <h1 className="text-xl col-span-3">Informações Básicas</h1>
 
-            {getProperty("Order ID", order._id)}
+            {getProperty("ID Pedido", order._id)}
             {getProperty(
-              "Placed On",
+              "Realizado em",
               moment(order.createdAt).format("DD MMM YYYY hh:mm a")
             )}
-            {getProperty("Total Amount", `$ ${order.total}`)}
-            {getProperty("Order Status", order.orderStatus)}
-            {getProperty("Payment Status", order.paymentStatus)}
-            {getProperty("Transaction Id", order.transactionId)}
+            {getProperty("Valor Total", `R$ ${order.total}`)}
+            {getProperty("Status do pedido", order.orderStatus)}
+            {getProperty("Status de Pagamento", order.paymentStatus)}
+            {getProperty("Id da Transação", order.transactionId)}
 
             <hr className="border-gray-300 border-dashed col-span-3" />
 
-            <h1 className="text-xl col-span-3">Shipping Information</h1>
+            <h1 className="text-xl col-span-3">Informações de Envio</h1>
 
             {Object.keys(order.shippingAddress.address).map((key) => {
               return getProperty(key, order.shippingAddress.address[key]);

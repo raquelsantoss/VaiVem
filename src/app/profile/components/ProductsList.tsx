@@ -87,7 +87,7 @@ function ProductsList() {
               Deletar
             </Button>
             <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}}
-              type="primary"
+              type="default"
               className="btn-small"
               onClick={() => {
                 router.push(`/profile/edit_product/${params._id}`);
@@ -105,10 +105,10 @@ function ProductsList() {
     <div>
       <div className="flex justify-end">
         <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}}
-          type="primary"
+          type="default"
           onClick={() => router.push("/profile/add_product")}
         >
-          Add Produto
+          Adicionar Produto
         </Button>
       </div>
 

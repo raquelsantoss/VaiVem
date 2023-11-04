@@ -47,7 +47,7 @@ function CheckoutModal({
       title={
         <div className="flex justify-between items-center font-bold text-xl">
           <span>Checkout</span>
-          <span>Total: ${total}</span>
+          <span>Total: R${total}</span>
         </div>
       }
       open={showCheckoutModal}

@@ -48,7 +48,7 @@ async function ProductInfo({
               ))}
             </div>
             <div className="my-5 flex flex-col">
-              <span className="text-5xl">$ {product.price}</span>
+              <span className="text-5xl">R$ {product.price}</span>
 
               <span className="text-gray-500 mt-2 ml-1">
                 {product.countInStock > 0

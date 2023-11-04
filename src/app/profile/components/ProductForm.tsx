@@ -144,7 +144,7 @@ function ProductForm({
                   block
                   className="mt-5"
                 >
-                  Add Feature
+                  Adicionar Feature
                 </Button>
               </div>
             )}
@@ -153,7 +153,7 @@ function ProductForm({
 
         <div className="col-span-3 justify-end flex gap-5">
           <Button onClick={() => router.back()}>Voltar</Button>
-          <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}} type="primary" htmlType="submit" loading={loading}>
+          <Button style={{ backgroundColor: "#00B4FF",  color: "#fff"}} type="default" htmlType="submit" loading={loading}>
             Salvar
           </Button>
         </div>

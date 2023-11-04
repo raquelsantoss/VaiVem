@@ -47,12 +47,12 @@ function CheckoutForm({
         throw result.error;
       }
 
-      message.success("Payment successful");
+      message.success("Pagamento realizado com sucesso");
 
       // save order to database
       const orderPayload = {
         items: cartItems,
-        paymentStatus: "paid",
+        paymentStatus: "pago",
         orderStatus: "order placed",
         shippingAddress: result.paymentIntent.shipping,
         transactionId: result.paymentIntent.id,
@@ -60,7 +60,7 @@ function CheckoutForm({
       };
       await axios.post("/api/orders/place_order", orderPayload);
       dispatch(ClearCart());
-      message.success("Order placed successfully");
+      message.success("Pedido realizado com sucesso");
       router.push("/profile");
     } catch (error: any) {
       message.error(error.message);
@@ -76,7 +76,7 @@ function CheckoutForm({
           <PaymentElement />
           <AddressElement
             options={{
-              allowedCountries: ["US"],
+              allowedCountries: ["BR"],
               mode: "shipping",
             }}
           />
@@ -88,10 +88,10 @@ function CheckoutForm({
             block
             onClick={() => setShowCheckoutModal(false)}
           >
-            Cancel
+            Cancelar
           </Button>
           <Button type="primary" htmlType="submit" className="mt-5" block>
-            Pay
+            Pagar
           </Button>
         </div>
       </form>
