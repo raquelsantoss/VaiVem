@@ -51,12 +51,6 @@ Não há no Brasil um rentplace, ou seja, uma plataforma onde empresas e pessoas
 
 ## 🔧 Setup
 
-### Link para acessar o projeto:
-* [**`Link do projeto - VaiVem`**](vai-vem.vercel.app)
-
-
-
-
 ```sh
 $ git clone https://github.com/raquelsantoss/VaiVem.git
 $ npm install
