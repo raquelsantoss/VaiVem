@@ -5,8 +5,6 @@
 
 ## 🚀 VaiVem
 
-A startup existe para unir as tecnologias, como a internet, aplicativos móveis, plataformas digitais e a Internet das Coisas (IoT) e o aluguel de produtos, fomentando a economia compartilhada e contribuindo para a construção de uma sociedade mais conectada e eficiente.
-Não há no Brasil um rentplace, ou seja, uma plataforma onde empresas e pessoas físicas possam encontrar ou oferecer qualquer produto para locação. Queremos atingir todos que queiram participar desse novo ambiente de economia.
 
 ## 🤖 Tecnologias | Ferramentas
 
